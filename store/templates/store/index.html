@@ -1,0 +1,115 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block imagen %}
+
+<div class="imagen">
+    <h1 class="eslogan">
+        <div class="linea-1-eslogan">Elegancia, funcionalidad y transformación</div>
+        en cada detalle
+        para tu Hogar
+        <!-- Descubre nuestra colección de productos de alta calidad. <br> -->
+    </h1>
+</div>
+
+{% endblock imagen %}
+
+
+{% block content %}
+
+<div class="content">
+    <div class="form-detail-categoria">
+        <select name="categoria" id="categoria" class="form-select categoria-select">
+            <option value="">Seleccionar categoría</option>
+            <option value="muebles">Muebles</option>
+            <option value="decoracion">Decoración</option>
+            <option value="electrodomesticos">Electrodomésticos</option>
+        </select>
+
+        <input type="submit" value="Filtrar" class="btn btn-primary">
+
+    </div>
+    <hr style="color: #000;">
+    <div class="detalle">
+        <div class="row">
+            <div class="card">
+                <a href="{% url 'detail_product' 1 %}">
+                    <img class="card-img-top" src="{% static '/img/shopping.webp' %}" alt="Card image cap" />
+                    <div class="card-body">
+                        <h4 class="card-title">Inodoro</h4>
+                        <p class="card-text">US$ 55</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="{% url 'detail_product' 2 %}">
+                    <img class="card-img-top" src="{% static '/img/fregaderos.webp' %}" alt="Card image cap" />
+                    <div class="card-body">
+                        <h4 class="card-title">Fregadero</h4>
+                        <p class="card-text">US$ 80</p>
+                    </div>
+                </a>                
+            </div>
+            <div class="card">
+                <a href="{% url 'detail_product' 1 %}">
+                    <img class="card-img-top" src="{% static '/img/shopping.webp' %}" alt="Card image cap" />
+                    <div class="card-body">
+                        <h4 class="card-title">Inodoro</h4>
+                        <p class="card-text">US$ 55</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="{% url 'detail_product' 2 %}">
+                    <img class="card-img-top" src="{% static '/img/fregaderos.webp' %}" alt="Card image cap" />
+                    <div class="card-body">
+                        <h4 class="card-title">Fregadero</h4>
+                        <p class="card-text">US$ 80</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="{% url 'detail_product' 1 %}">
+                    <img class="card-img-top" src="{% static '/img/shopping.webp' %}" alt="Card image cap" />
+                    <div class="card-body">
+                        <h4 class="card-title">Inodoro</h4>
+                        <p class="card-text">US$ 55</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="{% url 'detail_product' 2 %}">
+                    <img class="card-img-top" src="{% static '/img/fregaderos.webp' %}" alt="Card image cap" />
+                    <div class="card-body">
+                        <h4 class="card-title">Fregadero</h4>
+                        <p class="card-text">US$ 80</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="{% url 'detail_product' 1 %}">
+                    <img class="card-img-top" src="{% static '/img/shopping.webp' %}" alt="Card image cap" />
+                    <div class="card-body">
+                        <h4 class="card-title">Inodoro</h4>
+                        <p class="card-text">US$ 55</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="{% url 'detail_product' 2 %}">
+                    <img class="card-img-top" src="{% static '/img/fregaderos.webp' %}" alt="Card image cap" />
+                    <div class="card-body">
+                        <h4 class="card-title">Fregadero</h4>
+                        <p class="card-text">US$ 80</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</div>
+
+{% endblock content %}
